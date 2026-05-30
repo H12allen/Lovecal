@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Poppins', sans-serif;
+
+  background: linear-gradient(135deg, #ff4d6d, #ff758f, #ff8fa3);
+
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.2rem;
+
+  margin-bottom: 10px;
+
+  color: white;
+}
+
+.subtitle {
+  color: white;
+
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+
+  padding: 16px;
+
+  margin-bottom: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  transition: 0.3s ease;
+}
+input:focus::placeholder {
+  transform: translateY(-20px);
+  transform: translateX(30px);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+button {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+
+  scale: 1.02;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.percentage {
+  width: 150px;
+  height: 150px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+#score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4d6d;
+}
+
+#couple {
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+#message {
+  color: white;
+
+  line-height: 1.6;
+}
+
+.show {
+  animation: pop 0.5s ease;
+}
+.reset-btn {
+  margin-top: 20px;
+
+  background: white;
+
+  color: #ff4d6d;
+
+  font-weight: 600;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
